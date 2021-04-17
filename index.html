@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Project Title · </title>
+    <meta name="Description" content="Kumar's Design Portfolio">
+<link rel = "icon" href = "images/128.svg" type = "image/x-icon">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links --> 
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>  
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Scroll -->
+   
+   <style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+</style>
+    
+</head>
+
+<body class="grid">
+    
+<div class="top">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+    
+
+    <!-- Header -->
+    <header class="c12">
+
+        <!-- Nav -->
+        <div class="hero">
+
+
+ 
+
+
+            <div class="header">
+                <h5 class="hover-underline-animation" class="option"><a href="https://kumarr.netlify.app/">⬅ Back Home</a></h5>
+                
+                <nav class="nav">
+                    <!--<h5 class="option"><a class="hover-underline-animation" href="https://kumarr.netlify.app/#Selectedworks">Works</a></h5>
+                    <h5 class="option" ><a class="hover-underline-animation" href="https://kumarr.netlify.app/">Articles</a></h5>-->
+                    <h5 class="option"><a class="hover-underline-animation" href="https://www.notion.so/About-Me-255b6fe708d147bf83c03c64fea4e837">About</a></h5>
+                    <h5 class="option"><a class="hover-underline-animation" href="https://www.notion.so/Resume-e7735724685d4258bfcaac653213e60f">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+
+            <div class="title">
+                <h1 class="content-web emoji">👋</h1>
+                <div>
+                    <h1 class="content-mobile">👋</h1>
+                    <h1>
+                    <span class="starbucks-title">Hey there!!!</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- **DOUBLE SIDED DISPLAY** -->
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    <h5 class="subtitle">ABOUT ME</h5>
+                    <p>
+                        Write about me in this section. <a href="https://kumarr.netlify.app/" target="_blank" rel="noopener" class="link starbucks-link">Link</a> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</br> Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+                    </p>
+                </div>
+
+                
+
+                
+            </div>
+            <img alt="PatchCap and PatchRx app" src="images/handshake.png" class="img summary-section">
+        </div>
+ 
+    </div>
+
+    
+
+    
+
+ 
+    </div>
+
+
+
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    
+                    <h4 class="hover-underline-animation" class="option"><a href="https://kumarr.netlify.app/">⬅ Back to home Page</a></h4>
+                </div>
+
+                
+
+                
+            </div>
+            <div align="right">
+            <!--<h4 class="hover-underline-animation" class="option"><a href="https://cstemplate.netlify.app/">Next Case study ➡</a></h4>-->
+        </div>
+        </div></div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+        
+    
+  </body>
+
+
+
+</html>
